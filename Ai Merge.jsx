@@ -587,10 +587,10 @@ function filesToArtboards() {
                 if (f.exists) {
                     theFile = doc.groupItems.createFromFile(f);
 
-                    // @rjduran: name each group with filename and create a symbol
-                    theFile.name = boardName; // @rjduran: set group to board name
+                    // rjduran: name each group with filename and create a symbol
+                    theFile.name = boardName; // rjduran: set group to board name
                     
-                    // @rjduran: make a symbol from the group and set the name
+                    // rjduran: make a symbol from the group and set the name
                     var mySymbol = doc.symbols.add(theFile);
                     mySymbol.name = boardName;
                 }
